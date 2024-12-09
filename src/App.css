@@ -166,7 +166,8 @@
 }
 
 .content-bg-image__wrapper {
-  padding: 2rem;
+  padding-bottom: 3.5rem;
+  padding-top: 2rem;
 }
 
 .content-bg-image__title {
