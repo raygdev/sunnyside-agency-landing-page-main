@@ -145,7 +145,23 @@
   text-decoration: none;
   color: var(--neutral-v-dark-blue);
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 900;
+  letter-spacing: .0625rem;
+  position: relative;
+  align-self: center;
+  font-family: 'Fraunces';
+}
+
+.content-learn-more__link::before {
+  content: '';
+  position: absolute;
+  width: 110%;
+  background-color: var(--primary-yellow);
+  height: .625rem;
+  z-index: -1;
+  border-radius: 1rem;
+  bottom: .01rem;
+  left: -.40rem;
 }
 
 .content-bg-image__1,
@@ -203,6 +219,10 @@
     padding: 0 5rem;
     padding-bottom: 2rem;
     align-self: center;
+  }
+
+  .content-learn-more__link {
+    align-self: flex-start;
   }
 
   .content-image,
