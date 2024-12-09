@@ -136,8 +136,9 @@
 
 }
 .content-blurb {
-  font-weight: 500;
-  color: var(--neutral-dark-grayish-blue)
+  font-weight: 700;
+  color: var(--neutral-dark-grayish-blue);
+  font-size: 1.125rem;
 }
 .content-learn-more__link {
   margin-top: .75rem;
