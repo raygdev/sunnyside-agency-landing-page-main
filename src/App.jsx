@@ -19,7 +19,7 @@ function App() {
             <h2 className='content-title'>Transform your brand</h2>
             <p className='content-blurb'>  We are a full-service creative agency specializing in helping brands grow fast. 
             Engage your clients through compelling visuals that do most of the marketing for you.</p>
-            <a href="" className="content-learn-more__link">Learn more</a>
+            <a href="" className="content-learn-more__link content-learn-more__link-1">Learn more</a>
           </div>
         </div>
         <div className="content-wrapper">
@@ -30,7 +30,7 @@ function App() {
           <div className="content-info__wrapper">
             <h2 className='content-title'>Stand out to the right audience</h2>
             <p className='content-blurb'>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
-            <a href="" className="content-learn-more__link"> Learn more</a>
+            <a href="" className="content-learn-more__link content-learn-more__link-2"> Learn more</a>
           </div>
         </div>
         <div className='content-wrapper'>
@@ -51,24 +51,33 @@ function App() {
 
       {/** Testimonials Section */}
       <section className='testimonials'>
+
         <h2 className="testimonials-title">Client testimonials</h2>
-        <div className="testimonials-card">
-          <img src="" alt="" />
-          <p className="testimonial-card__info">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-          <p className="testimonial-card__name">Emily R.</p>
-          <p className="testimonial-card__title"> Marketing Director</p>
-        </div>
-        <div className="testimonials-card">
-          <img src="" alt="" />
-          <p className="testimonial-card__info">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
-          <p className="testimonial-card__name">Thomas S.</p>
-          <p className="testimonial-card__title">Chief Operating Officer</p>
-        </div>
-        <div className="testimonials-card">
-          <img src="" alt="" />
-          <p className="testimonial-card__info">  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-          <p className="testimonial-card__name"> Jennie F.</p>
-          <p className="testimonial-card__title">Business Owner</p>
+        <div className="testimonials-wrapper">
+          <div className="testimonials-card">
+            <img src="/assets/images/image-emily.jpg" alt="Emily sitting in a canyon with her hair of to the side" />
+            <p className="testimonials-card__info">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+            <div className='testimonials-card-info__wrapper'>
+              <p className="testimonials-card__name">Emily R.</p>
+              <p className="testimonials-card__title"> Marketing Director</p>
+            </div>
+          </div>
+          <div className="testimonials-card">
+            <img src="/assets/images/image-thomas.jpg" alt="Thomas smiling" />
+            <p className="testimonials-card__info">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+            <div className='testimonials-card-info__wrapper'>
+              <p className="testimonials-card__name">Thomas S.</p>
+              <p className="testimonials-card__title">Chief Operating Officer</p>
+            </div>
+          </div>
+          <div className="testimonials-card">
+            <img src="/assets/images/image-jennie.jpg" alt="Jennie smiling with sunshine hitting her face standing on a beach" />
+            <p className="testimonials-card__info">  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+            <div className='tesimonials-card-info__wrapper'>
+              <p className="testimonials-card__name"> Jennie F.</p>
+              <p className="testimonials-card__title">Business Owner</p>
+            </div>
+          </div>
         </div>
       </section>
 
