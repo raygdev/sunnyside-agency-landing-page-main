@@ -224,7 +224,7 @@
   color: var(--neutral-dark-grayish-blue);
   text-transform: uppercase;
   padding: 2.5rem 0;
-  letter-spacing: .3125rem;
+  letter-spacing: .25rem;
 }
 
 .testimonials-card {
@@ -357,6 +357,10 @@
     max-width: 1120px;
     margin: 0 auto;
     gap: 1.5rem;
+  }
+
+  .testimonials-title {
+    letter-spacing: .3125rem;
   }
 
   /* Hero Section */
