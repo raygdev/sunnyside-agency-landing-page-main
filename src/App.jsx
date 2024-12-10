@@ -83,7 +83,24 @@ function App() {
 
       {/** Hero Images Section */}
       <section className='hero'>
-
+        <div className="hero-wrapper">
+          <picture>
+            <source srcSet='/assets/images/desktop/image-gallery-milkbottles.jpg' media='(min-width: 1026px)'/>
+            <img src="/assets/images/mobile/image-gallery-milkbottles.jpg" alt="Milk bottles with sky background and cotton balls for clouds" />
+          </picture>
+          <picture>
+            <source  srcSet="/assets/images/desktop/image-gallery-orange.jpg" media='(min-width: 1026px)'/>
+            <img src="/assets/images/mobile/image-gallery-orange.jpg" alt="Half a cut orange on a white plate with a blue rim" />
+          </picture>
+          <picture>
+            <source  srcSet="/assets/images/desktop/image-gallery-cone.jpg" media='(min-width: 1026px)'/>
+            <img src="/assets/images/mobile/image-gallery-cone.jpg" alt="An empty waffle-style ice cream cone" />
+          </picture>
+          <picture>
+            <source  srcSet="/assets/images/desktop/image-gallery-sugarcubes.jpg" media='(min-width: 1026px)'/>
+            <img src="/assets/images/mobile/image-gallery-sugar-cubes.jpg" alt="Square cut sugar cubes stacked on top of each other like a wall" />
+          </picture>
+        </div>
       </section>
     </main>
     <Footer />

@@ -249,6 +249,11 @@
   width: 4.5rem;
 }
 
+.hero-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
 
 
 @media (min-width: 1026px){
@@ -311,6 +316,11 @@
     max-width: 1120px;
     margin: 0 auto;
     gap: 1.5rem;
+  }
+
+  /* Hero Section */
+  .hero-wrapper {
+    grid-template-columns: repeat(4,1fr);
   }
 
   #root {
