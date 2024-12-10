@@ -5,7 +5,9 @@
   --primary-yellow: hsl(51, 100%, 49%);
   --primary-dark-cyan: hsl(167, 40%, 24%); /* graphic design text */
   --primary-dark-blue: hsl(198, 62%, 26%); /* photography text */
-  --primary-moderate-cyan: hsl(168, 34%, 41%); /* footer */
+  --primary-moderate-cyan: hsl(168, 34%, 41%);
+  --primary-light-cyan: hsl(168, 44%, 70%); /* footer */
+  --primary-cyan: hsl(168, 45%, 32%);
 
   --neutral-v-dark-blue: hsl(212,27%, 19%);
   --neurtal-v-dark-grayish-blue: hsl(213, 9%, 39%);
@@ -82,7 +84,19 @@ ul {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 #root {
   max-width: 515px;
   margin: 0 auto
+}
+
+.logo-color {
+  fill: var(--neutral-white)
+}
+
+.footer-logo-color {
+  fill: var(--primary-dark-cyan);
 }

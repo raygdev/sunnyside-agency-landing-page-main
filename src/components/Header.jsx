@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className='header'>
         <div className="header-wrapper">
-            <Logo />
+            <Logo className={'logo-color'} />
             <Navigation />
         </div>
         <h1 className="header-title">We are creatives</h1>

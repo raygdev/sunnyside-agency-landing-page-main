@@ -1,11 +1,56 @@
+/* Basic Layout */
 
 .header,
 .navigation,
 .navigation-list,
-.navigation-list__item {
+.navigation-list__item,
+.content-wrapper,
+.content-info__wrapper,
+.content-bg-image__1,
+.content-bg-image__2,
+.testimonials-wrapper,
+.testimonials-card,
+.footer-wrapper {
   display: flex;
   flex-direction: column;
 }
+
+.navigation-list,
+.content-info__wrapper,
+.testimonials-card {
+  gap: 2rem;
+}
+
+.header-wrapper,
+.navigation,
+.navigation-list__item,
+.testimonials-card,
+.testimonials-wrapper,
+.footer-wrapper {
+  align-items: center;
+}
+
+/* Basic Typogrophy */
+
+.header-title,
+.content-title,
+.content-learn-more__link,
+.testimonials-card__name {
+  font-family: 'Fraunces';
+  font-weight: var(--font-bold);
+}
+
+.header-title,
+.content-wrapper,
+.testimonials-wrapper,
+.testimonials-card,
+.testimonials-title,
+.testimonials-card-info__wrapper {
+  text-align: center;
+}
+
+/* Header Styles */
+
 .header {
   background: url('/assets/images/mobile/image-header.jpg') no-repeat center;
   background-size: cover;
@@ -16,14 +61,10 @@
 .header-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .header-title {
-  text-align: center;
   text-transform: uppercase;
-  font-family: 'Fraunces';
-  font-weight: var(--font-bold);
   color: var(--neutral-white);
   letter-spacing: var(--heading-1-spacing);
   font-size: var(--heading-1);
@@ -53,7 +94,6 @@
   max-width: 468px;
   border: black 1px solid;
   margin-top: 1.5rem;
-  align-items: center;
   justify-content: center;
   --b: 2em; /* base */
   --h: 1em; /* height */
@@ -73,18 +113,10 @@
   display: none;
 }
 
-.navigation-list {
-  gap: 2rem
-}
-
 .navigation-list__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 .navigation-list__item-link {
-  text-decoration: none;
   color: inherit;
   font-size: var(--nav-link);
   padding: .75rem 1rem;
@@ -100,7 +132,6 @@
 
 .navigation-button {
   background-color: unset;
-  /* padding: .5rem; */
   border: none;
 }
 
@@ -110,25 +141,14 @@
 
 /* Main Content Section */
 
-.content {}
-.content-wrapper {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
 .content-image > img {
   width: 100%;
   display: block;
 }
 .content-info__wrapper {
-  display: flex;
-  flex-direction:  column;
   padding: 1.5rem;
-  gap: 2rem
 }
 .content-title {
-  font-family: 'Fraunces';
-  font-weight: 900;
   font-size: var(--heading-2);
   color: var(--neutral-v-dark-blue);
   letter-spacing: -.014rem;
@@ -142,14 +162,11 @@
 }
 .content-learn-more__link {
   margin-top: .75rem;
-  text-decoration: none;
   color: var(--neutral-v-dark-blue);
   text-transform: uppercase;
-  font-weight: 900;
   letter-spacing: .0625rem;
   position: relative;
   align-self: center;
-  font-family: 'Fraunces';
 }
 
 .content-learn-more__link::before {
@@ -173,8 +190,6 @@
 .content-bg-image__1,
 .content-bg-image__2 {
   padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
   padding-top: 24.875rem;
 
 }
@@ -205,28 +220,15 @@
   padding: 1.5rem ;
 }
 
-.testimonials-wrapper,
-.testimonials-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
 .testimonials-title {
   color: var(--neutral-dark-grayish-blue);
   text-transform: uppercase;
   padding: 2.5rem 0;
-  text-align: center;
+  letter-spacing: .3125rem;
 }
 
 .testimonials-card {
-  gap: 2rem;
   padding-bottom: 4rem;
-}
-
-.testimonials-card-info__wrapper {
-  text-align: center;
 }
 
 .testimonials-card__info {
@@ -235,8 +237,6 @@
 }
 
 .testimonials-card__name {
-  font-family: 'Fraunces';
-  font-weight: 900;
   font-size: 1.125rem;
 }
 
@@ -252,6 +252,47 @@
 .hero-wrapper {
   display: grid;
   grid-template-columns: repeat(2,1fr);
+}
+
+/* Footer section */
+
+.footer {
+  background-color: var(--primary-light-cyan);
+  padding: 4rem 2.4375rem 5.5rem;
+}
+
+.footer-wrapper-list {
+  display: flex;
+}
+.footer-wrapper {
+  max-width: 18.75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+
+.footer-wrapper-list__links {
+  gap: 3.5625rem
+}
+
+.footer-wrapper-list__socials {
+  gap: 1.75rem;
+  margin-top: 2.75rem;
+}
+
+.footer-wrapper-list__item > a {
+  color: var(--primary-moderate-cyan);
+  font-weight: 700;
+  fill: var(--primary-cyan)
+}
+
+.footer-wrapper-list__item > a:hover {
+  color: var(--neutral-white);
+  fill: var(--neutral-white)
+}
+
+.attribution {
+  display: block;
+  margin: 1rem auto;
 }
 
 
