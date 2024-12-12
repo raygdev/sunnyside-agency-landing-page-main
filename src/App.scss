@@ -72,7 +72,7 @@
       display: inline-block;
       &:hover {
         background-color: var(--primary-yellow);
-        border-radius: 1.5rem;
+        border-radius: 2.5rem;
         color: var(--neutral-v-dark-blue);
         text-transform: uppercase; 
       }
@@ -84,6 +84,39 @@
   }
   &-hamburger {
     fill: var(--neutral-white) 
+  }
+  @media (min-width: 1026px) {
+    position: unset;
+    transform: none;
+    left: auto;
+    clip-path: none;
+    border-image: none;
+    margin: auto;
+    border: none;
+    min-height: auto;
+    min-width: min-content;
+    &-wrapper {
+      position: initial;
+    }
+    &-list {
+      gap: 2.35rem;
+      flex-direction: row;
+      padding: none;
+      width: auto;
+    }
+    &-item {
+      &__link {
+        color: var(--neutral-white);
+        &:hover {
+          color: var(--neutral-white);
+          background-color: rgba(255,255,255,0.25)
+        }
+      }
+    }
+
+    &-button {
+      display: none
+    }
   }
 }
 
