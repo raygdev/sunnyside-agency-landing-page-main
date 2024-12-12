@@ -1,7 +1,12 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import { useMedia } from "../hooks/useMedia"
 
 function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
+  const { isDesktop } = useMedia('(min-width: 1026px)')
+  useEffect(() => {
+    setIsOpen(isDesktop)
+  }, [isDesktop])
 
   function setOpen() {
     setIsOpen(prev => !prev)
