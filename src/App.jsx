@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import Footer from './components/Footer'
 import Header from './components/Header'
 
@@ -10,7 +10,7 @@ function App() {
     <main>
       { /** Main Content Section */}
       <section className='content'>
-        <div className="content-wrapper row-reverse">
+        <div className="content-wrapper row-reverse content-wrapper--reverse">
           <picture className='content-image' alt="an egg on a yellow background" >
             <source srcSet='/assets/images/desktop/image-transform.jpg' media='(min-width: 1026px)'/>
             <img src="/assets/images/mobile/image-transform.jpg" alt="an egg on a yellow background" />
@@ -19,28 +19,28 @@ function App() {
             <h2 className='content-title'>Transform your brand</h2>
             <p className='content-blurb'>  We are a full-service creative agency specializing in helping brands grow fast. 
             Engage your clients through compelling visuals that do most of the marketing for you.</p>
-            <a href="" className="content-learn-more__link content-learn-more__link-1">Learn more</a>
+            <a href="" className="content-learn-more__link content-learn-more__link--1">Learn more</a>
           </div>
         </div>
         <div className="content-wrapper">
-          <picture className='content-image' alt="an egg on a yellow background" >
+          <picture className='content-image' alt="A pink cup on a pink background" >
             <source srcSet='/assets/images/desktop/image-stand-out.jpg' media='(min-width: 1026px)'/>
-            <img src="/assets/images/mobile/image-stand-out.jpg" alt="an egg on a yellow background" />
+            <img src="/assets/images/mobile/image-stand-out.jpg" alt="A pink cup on a pink background" />
           </picture>
           <div className="content-info__wrapper">
             <h2 className='content-title'>Stand out to the right audience</h2>
             <p className='content-blurb'>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
-            <a href="" className="content-learn-more__link content-learn-more__link-2"> Learn more</a>
+            <a href="" className="content-learn-more__link content-learn-more__link--2"> Learn more</a>
           </div>
         </div>
         <div className='content-wrapper'>
-          <div className='content-bg-image__1'>
+          <div className='content-bg-image--1'>
             <div className='content-bg-image__wrapper'>
               <h2 className="content-bg-image__title">Graphic design</h2>
               <p className="content-bg-image-info">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
             </div>
           </div>
-          <div className='content-bg-image__2'>
+          <div className='content-bg-image--2'>
             <div className='content-bg-image__wrapper'>
               <h2 className="content-bg-image__title">Photography</h2>
               <p className="content-bg-image-info">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
