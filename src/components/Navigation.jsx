@@ -20,16 +20,28 @@ function Navigation() {
         <nav className='nav' aria-hidden={!isOpen}>
             <ul className="nav-list">
                 <li className="nav-item">
-                  <a className="nav-item__link" href="#">About</a>
+                  <a className="nav-item__link" href="#">
+                    <span className="nav-item__link--hidden">ABOUT</span>
+                    <span className="nav-item__link--visible">About</span>
+                  </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-item__link" href="#">Services</a>
+                  <a className="nav-item__link" href="#">
+                    <span className="nav-item__link--hidden">SERVICES</span>
+                    <span className="nav-item__link--visible">Services</span>
+                  </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-item__link" href="#">Projects</a>
+                  <a className="nav-item__link" href="#">
+                    <span className="nav-item__link--hidden">PROJECTS</span>
+                    <span className="nav-item__link--visible">Projects</span>
+                  </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-item__link" href="#">Contact</a>
+                  <a className="nav-item__link" href="#">
+                    <span className="nav-item__link--hidden">CONTACT</span>
+                    <span className="nav-item__link--visible">Contact</span>
+                  </a>
                 </li>
             </ul>
         </nav>
