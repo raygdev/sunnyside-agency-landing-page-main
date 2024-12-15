@@ -54,35 +54,35 @@ function App() {
 
         <h2 className="testimonials-title">Client testimonials</h2>
         <div className="testimonials-wrapper">
-          <div className="testimonials-card">
+          <figure className="testimonials-card">
             <img src="/assets/images/image-emily.jpg" alt="Emily sitting in a canyon with her hair of to the side" />
-            <p className="testimonials-card__info">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-            <div className='testimonials-card-info__wrapper'>
+            <blockquote className="testimonials-card__info">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</blockquote>
+            <figcaption className='testimonials-card-info__wrapper'>
               <p className="testimonials-card__name">Emily R.</p>
-              <p className="testimonials-card__title"> Marketing Director</p>
-            </div>
-          </div>
-          <div className="testimonials-card">
+              <span className="testimonials-card__title"> Marketing Director</span>
+            </figcaption>
+          </figure>
+          <figure className="testimonials-card">
             <img src="/assets/images/image-thomas.jpg" alt="Thomas smiling" />
-            <p className="testimonials-card__info">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
-            <div className='testimonials-card-info__wrapper'>
+            <blockquote className="testimonials-card__info">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</blockquote>
+            <figcaption className='testimonials-card-info__wrapper'>
               <p className="testimonials-card__name">Thomas S.</p>
-              <p className="testimonials-card__title">Chief Operating Officer</p>
-            </div>
-          </div>
-          <div className="testimonials-card">
+              <span className="testimonials-card__title">Chief Operating Officer</span>
+            </figcaption>
+          </figure>
+          <figure className="testimonials-card">
             <img src="/assets/images/image-jennie.jpg" alt="Jennie smiling with sunshine hitting her face standing on a beach" />
-            <p className="testimonials-card__info">  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-            <div className='tesimonials-card-info__wrapper'>
+            <blockquote className="testimonials-card__info">  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</blockquote>
+            <figcaption className='tesimonials-card-info__wrapper'>
               <p className="testimonials-card__name"> Jennie F.</p>
-              <p className="testimonials-card__title">Business Owner</p>
-            </div>
-          </div>
+              <span className="testimonials-card__title">Business Owner</span>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
       {/** Hero Images Section */}
-      <section className='hero'>
+      <div className='hero'>
         <div className="hero-wrapper">
           <picture>
             <source srcSet='/assets/images/desktop/image-gallery-milkbottles.jpg' media='(min-width: 1026px)'/>
@@ -101,7 +101,7 @@ function App() {
             <img src="/assets/images/mobile/image-gallery-sugar-cubes.jpg" alt="Square cut sugar cubes stacked on top of each other like a wall" />
           </picture>
         </div>
-      </section>
+      </div>
     </main>
     <Footer />
     </>
